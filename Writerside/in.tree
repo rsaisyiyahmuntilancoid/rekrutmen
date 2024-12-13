@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="in"
+                 name="RSUAM"
+                 start-page="pendahuluan.md">
+
+    <toc-element topic="pendahuluan.md"/>
+    <toc-element topic="env.md"/>
+    <toc-element topic="soal.md"/>
+</instance-profile>
