@@ -84,7 +84,7 @@ Anda diminta untuk mengembangkan aplikasi menggunakan bahasa pemrograman pilihan
 1. **Kode Program**:
     - Berikan file lengkap aplikasi yang dapat dijalankan, termasuk script SQL untuk pembuatan tabel.
 2. **Dokumentasi API**:
-    - Tuliskan dokumentasi API, meliputi endpoint, metode HTTP, parameter, dan contoh respon dalam file `README.md`.
+    - Tuliskan dokumentasi teknologi, keterangan, dan API meliputi endpoint, metode HTTP, parameter, dan contoh respon dalam file `README.md`.
 3. **Demo Aplikasi**:
     - Berikan langkah-langkah untuk menjalankan aplikasi dan pengujian API.
 
