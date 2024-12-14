@@ -9,16 +9,19 @@ Rumah sakit tipe D di Indonesia memerlukan sistem untuk mengelola data pasien se
 
 ### **Latar Belakang**
 Seiring berkembangnya kebutuhan digitalisasi di rumah sakit tipe D, data pasien perlu dikelola secara aman sesuai dengan standar yang berlaku. Sistem ini juga harus menyediakan API untuk memungkinkan integrasi dengan layanan pihak ketiga, dengan kontrol akses menggunakan API key.
-
-Anda diminta untuk mengembangkan aplikasi menggunakan bahasa pemrograman pilihan:
-- **Java**
-- **PHP**
-- **JavaScript**
+Anda diminta untuk mengembangkan aplikasi menggunakan bahasa pemrograman pilihan yang sudah disebutkan pada Pendahuluan.
 
 ### **Fitur yang Harus Diimplementasikan**
-1. **CRUD Data Pasien**
+1. **CRUD dan tampilan Data Pasien**, 
+   buat tampilan dan fungsi CRUD untuk sebuah web, untuk mengelola data berikut,
+    - **Form**
+        - Login
+        - Data Pasien
+        - Register
+        - Data API Key
+        - Log
     - **Data pasien yang dikelola**:
-        - Nomor Rekam Medis - String - unik
+        - Nomor Rekam Medis - String - unik 
         - Email - String - unik
         - Nama Lengkap - String
         - Umur - int
@@ -28,7 +31,7 @@ Anda diminta untuk mengembangkan aplikasi menggunakan bahasa pemrograman pilihan
         - Jenis Kelamin - Enum (L, P) 
         - NIK - int
     - **Validasi**:
-        - Data NIK pasien harus dienkripsi sebelum disimpan ke dalam database.
+        - Data NIK pasien harus dienkripsi (bukan hashing) sebelum disimpan ke dalam database.
         - Semua data tidak boleh kosong.
         - Format Nomor Rekam Medis adalah 0 sebanyak 10 angka, kemudian increment (0000000000)
         - NIK wajib 16 digit.
@@ -43,8 +46,8 @@ Anda diminta untuk mengembangkan aplikasi menggunakan bahasa pemrograman pilihan
 3. **Log API Request**
     - Catat semua permintaan ke API, meliputi:
         - Endpoint yang diakses.
-        - Waktu permintaan.
         - Status respon (berhasil/gagal).
+        - Respon dari endpoint.
     - Log ini harus disimpan di database dan dapat ditampilkan sebagai laporan.
 
 4. **Keamanan Data**
@@ -59,20 +62,20 @@ Anda diminta untuk mengembangkan aplikasi menggunakan bahasa pemrograman pilihan
     - Berikan script SQL untuk pembuatan tabel.
 
 2. **Endpoint API yang Wajib Ada**:
-    - **POST /login**: Login dan mendapatkan token akses.
-    - **POST /patients**: Menambahkan data pasien baru.
-    - **GET /patients**: Mendapatkan daftar pasien.
-    - **GET /patients/:id**: Mendapatkan detail pasien berdasarkan ID.
-    - **PUT /patients/:id**: Mengupdate data pasien berdasarkan ID.
-    - **DELETE /patients/:id**: Menghapus data pasien berdasarkan ID.
-    - **GET /log-requests**: Mendapatkan log permintaan API.
+    - **POST /path-login**: Login dan mendapatkan token akses.
+    - **POST /path**: Menambahkan data pasien baru.
+    - **GET /path**: Mendapatkan daftar pasien.
+    - **GET /path/:id** atau **/path?id=:id**: Mendapatkan detail pasien berdasarkan ID.
+    - **PUT/PATCH /path/:id**  atau **/path?id=:id**: Mengupdate data pasien berdasarkan ID.
+    - **DELETE /path/:id** atau **/path?id=:id**: Menghapus data pasien berdasarkan ID.
+    - **GET /path-log**: Mendapatkan log permintaan API.
 
 3. **Validasi**:
     - Pastikan semua input divalidasi dengan baik.
-    - Permintaan API tanpa API key yang valid harus ditolak dengan respon **401 Unauthorized**.
+    - Permintaan API tanpa API key dan token akses yang valid harus ditolak dengan respon **401 Unauthorized**.
 
-4. **Opsional (+)**:
-    - Tambahkan fitur pencarian pasien berdasarkan nama atau diagnosa.
+4. **Opsional**:
+    - Tambahkan fitur pencarian pasien berdasarkan nama atau alamat atau email atau nomor rekam medis.
     - Implementasikan middleware untuk membatasi jumlah request berdasarkan API key (rate limiting).
 
 ---
