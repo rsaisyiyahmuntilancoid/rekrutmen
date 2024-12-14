@@ -6,10 +6,10 @@ Tes live coding ini bertujuan untuk mengevaluasi kemampuan Anda dalam menyelesai
 - **PHP**
 - **JavaScript**
 
-Anda juga diperbolehkan menggunakan native atau framework yang mendukung bahasa yang dipilih, seperti:
+Anda juga diperbolehkan menggunakan native atau framework/library yang mendukung bahasa yang dipilih, seperti:
 - **Java**: Spring Boot
 - **PHP**: Laravel, CodeIgniter
-- **JavaScript**: Next.js, dan yang lainnya
+- **JavaScript**: React, Next.js
 
 ## **Petunjuk Umum**
 1. Pilih salah satu bahasa pemrograman yang Anda kuasai untuk menyelesaikan soal yang diberikan.
