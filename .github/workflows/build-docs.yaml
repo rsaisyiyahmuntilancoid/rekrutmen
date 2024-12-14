@@ -77,6 +77,9 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     needs: [ build, test ]
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
     steps:
       - name: Download artifacts
         uses: actions/download-artifact@v4
