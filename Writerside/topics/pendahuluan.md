@@ -22,7 +22,7 @@ Anda juga diperbolehkan menggunakan native atau framework yang mendukung bahasa 
 4. Pastikan hasil yang Anda berikan memenuhi kriteria yang telah dijelaskan pada soal. 
 5. Anda tidak diperbolehkan menggunakan tool code assistant apapun dan AI chatbot. 
 6. Diperbolehkan untuk melihat dokumentasi official dari platform.
-   - 
+   
 ---
 
 ### **Catatan**
